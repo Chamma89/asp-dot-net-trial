@@ -8,4 +8,10 @@
     <PackageReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Group\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\Group\EmptyHTMLFile.html" />
+  </ItemGroup>
 </Project>
