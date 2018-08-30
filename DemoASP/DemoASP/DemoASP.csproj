@@ -11,13 +11,18 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.2" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.1.1.1" />
-    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.1"/>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.1" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Views\Group\" />
+    <Folder Include="Contexts\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\Group\EmptyHTMLFile.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Contexts\DemoDBcontext.cs" />
   </ItemGroup>
 </Project>
