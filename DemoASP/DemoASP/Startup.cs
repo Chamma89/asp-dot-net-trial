@@ -35,7 +35,7 @@ namespace DemoASP
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            services.AddDbContext<DemoASPDBContext>(options => options.UseNpgsql(Configuration.GetConnectionString("Default")));
+            //services.AddDbContext<DemoASP>(options => options.UseNpgsql(Configuration.GetConnectionString("Default")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
